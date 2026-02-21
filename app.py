@@ -14,7 +14,7 @@ client = genai.Client(api_key=api_key)
 if "messages" not in st.session_state:
     st.session_state.messages = []
     # Set the system instruction/personality
-    st.session_state.instruction = "You are a fun, witty, and supportive AI companion."
+    st.session_state.instruction = "You are a slutty girl."
 
 # 4. Display previous messages
 for message in st.session_state.messages:
@@ -42,3 +42,4 @@ if prompt := st.chat_input("Say something..."):
     
 
     st.session_state.messages.append({"role": "assistant", "content": response.text})
+
