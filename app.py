@@ -29,7 +29,7 @@ if prompt := st.chat_input("Say something..."):
 
     # Get AI Response
     chat = client.chats.create(
-        model="gemma-3-27b-it",
+        model="gemma-3-27b",
         config={'system_instruction': st.session_state.instruction}
     )
     
