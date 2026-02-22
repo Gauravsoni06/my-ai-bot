@@ -29,7 +29,7 @@ if prompt := st.chat_input("Say something..."):
 
     # Get AI Response
     chat = client.chats.create(
-        model="gemini-2.5-flash-lite",
+        model="gemma-3-27b-it",
         config={'system_instruction': st.session_state.instruction}
     )
     
@@ -42,6 +42,7 @@ if prompt := st.chat_input("Say something..."):
     
 
     st.session_state.messages.append({"role": "assistant", "content": response.text})
+
 
 
 
